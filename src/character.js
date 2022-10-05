@@ -4,6 +4,16 @@ export default class Character {
     this.intelligence = intelligence;
     this.charisma = charisma;
     this.health = health;
+    this.role = "";
+  }
+
+  attack(character) {
+    let hit = undefined;//Math.floor(Math.random() * 20 + 1);
+    let damage = undefined;//Math.floor(Math.random() * 20 + 1);
+    // if (hit > 0) {
+    //   character.health -= damage;
+    // }
+    return [hit, damage]
   }
 };
 
