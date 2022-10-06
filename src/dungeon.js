@@ -1,12 +1,16 @@
 export default class Dungeon {
   
-  // constructor(height, width) {
-  //   this.height = height;
-  //   this.width = width;
-  //   2DArr = [];
-  //   for (let i=0; i < this.height; i+=1) {
-      
-
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+    this.arr2D = [];
+    for (let i=0; i < this.height; i++) {
+      this.arr2D.push([]);
+      for (let n=0; n < this.width; n++) {
+        this.arr2D[i].push(n);
+      }
+    }
+  }  
 };
 
 
