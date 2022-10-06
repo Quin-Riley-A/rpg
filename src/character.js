@@ -8,11 +8,12 @@ export default class Character {
   }
 
   attack(character) {
-    let hit = undefined;//Math.floor(Math.random() * 20 + 1);
-    let damage = undefined;//Math.floor(Math.random() * 20 + 1);
-    // if (hit > 0) {
-    //   character.health -= damage;
-    // }
+    let hit = Math.floor(Math.random() * 20 + 1);
+    let damage = 0;
+    if (hit > 10) {
+      damage = Math.floor(Math.random() * 20 + 1);
+      character.health -= damage;
+    }
     return [hit, damage]
   }
 };
